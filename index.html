@@ -1,55 +1,445 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sathvik Nair</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href ="css/custom.css" rel = "stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <div ui-view="header" autoscroll="true"></div>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--Style Sheets-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/bbba5386a6.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-   
   </head>
+
   <body>
-  <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+    <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class = "nav navbar-nav navbar-left">
       <li><a href = "index.html">Home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="about.html">About</a></li>
-        <li><a href = "writing.html">Writing</a></li>
-        <li><a href = "projects.html">Projects</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
       </ul>
     </div>
   </div>
-</nav>
-<div class="jumbotron">
-  <div class="container">
+    </div>
+  </nav>
+<div class="container">
+<div class="intro">
+  <div class="col-md-6">
+    <img src="img/self.JPG" style="height: 40vh; width: 30vw;"/>
+  </div>
+  <div class="col-md-6">
     <h1>Sathvik Nair</h1>
-    <p style="padding-top: 16px;">Hi! I'm a rising second-year undergrad studying computer science at UC Berkeley.</p>
+    <p>I'm a second year undergraduate studying cognitive science and computer science at UC Berkeley. I love learning about human behavior and decision making processes, and I'm amazed by how advances in computation can allow us to create tools to make more informed, data-driven decisions which can advance our society. As a result, I'm interested in product management, data science, software development, and user experience research. Currently, I'm researching <a href="http://cocosci.berkeley.edu" target="_blank">natural language processing</a> and working in data science education, both <a href="http://data8.org" target="_blank">at Berkeley</a> and <a href="http://datascienceforindia.com" target="_blank">across the world</a>. In my free time, I enjoy playing the violin and tabla (a South Asian percussion instrument), reading about history and current events, and trying out new recipes.</p>
+  <div class="icons">
+  <a class = "fa fa-linkedin" href="https://www.linkedin.com/in/sathvik-nair-910676bb/" target="_blank"></a>
+  <a class = "fa fa-github" href = "https://github.com/sathvikn" target="_blank"></a>
+  <a class = "fa fa-envelope" href = "mailto:sathviknair@berkeley.edu"></a>
+  <a class = "fa fa-medium" href = "http://medium.com/@sathvik" target="_blank"></a> 
+  </div>
+  <br>
+  <button class="btn btn-primary">Resume</button>   
   </div>
 </div>
-<div style = "text-align: center">
-  <a class = "fa fa-linkedin" href="https://www.linkedin.com/in/sathvik-nair-910676bb/"></a>
-  <a class = "fa fa-github" href = "https://github.com/sathvikn"></a>
-  <a class = "fa fa-envelope" href = "mailto:sathviknair@berkeley.edu"></a>
-  <a class = "fa fa-file-text-o" href = "https://drive.google.com/open?id=0B4G5kST30fIkcDJSOE1DS05PSzA"></a>
+
+<div class="experience" id="exp">
+  <div class="current">
+    <h2>What am I working on?</h2>
+    <p>This semester, I'm taking the following courses: Efficient Algorithms and Intractable Problems (CS 170), Probability for Data Science (STAT 140), The Mind, Brain, and Behavior (MCB C61), and Stigma and Prejudice(PSYCH 167AC).</p>
+    <div class="grid">
+    <div class="col-md-4">
+      <h3>Research</h3>
+        <a href="http://cocosci.berkeley.edu/" target="_blank"><img class="research" src="img/Bayes-300h.jpg"></a>
+        <p>I'm a research assistant at UC Berkeley's Computational Cognitive Science Lab developing an audiovisual web-based experiment that models how understanding of language changes as the same phrase is transmitted across multiple subjects. In addition to working on the experiment, I'm also reading literature on probabilistic models of human language so I can adapt them to analyze the results.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Teaching</h3>
+        <a href="http://data8.org" target="_blank"><img class = "d8" src="img/d8logo.png"></a>
+        <p>I'm a tutor for UC Berkeley's introductory data science course, helping teach statistical inference techniques using Python. I teach a small section of students, hold office hours, and grade assignments. I've put some resources on the course <a href="teaching.html">here</a>.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Social Entrepreneurship</h3>
+        <a href="http://datascienceforindia.com" target="_blank"><img class = "dsi" src="img/navLogo.png"></a>
+        <p>I'm directing Data Science for India, which I founded with fellow Berkeley students last May. Our work over the summer teaching fundamental concepts of data science in over 12 Indian high schools was recognized by the <a href="https://southasia.berkeley.edu/sites/default/files/shared/newsletter/Khabar-Fall_2017.pdf" target="_blank">Institute of South Asia Studies</a> at UC Berkeley. I'm leading our team's efforts in curriculum creation, user research, and software development.</p>
+    </div>
+    </div>
+    <br>
+  </div>
+  <div class="courses">
+  <h2>Classes I've Taken</h2>
+  <ul>
+    <li>Discrete Matematics and Probability Theory (EECS 70, Fall 2017)</li>
+    <li>Linear Algebra and Differential Equations (MATH 54, Fall 2017)</li>
+    <li>Algorithms and Data Structures (CS 61B, Spring 2017)</li>
+    <li>Data Science and the Mind (COGSCI 88, Spring 2017)</li>
+    <li>Foundations of Data Science (CS/STAT/INFO C8, Spring 2017)</li>
+    <li>Designing Information Devices and Systems (EECS 16A, Fall 2016)</li>
+    <li>The Structure and Interpretation of Computer Programs (CS 61A, Fall 2016)</li>
+  </ul>
+  </div>
+  <div class="work">
+  <h2>Where I've Worked</h2>
+  <div class="pos">
+    <div class="col-md-4">
+      <img class="co" src="img/civikowl.png" href="http://civikowl.com" target="_blank">
+    </div>
+    <div class="col-md-8">
+      <p>I interned at <a href="http://civikowl.com" target="_blank">CivikOwl</a> last summer 2017 working on <b>software development</b>. I learned technologies like <b>ReactJS, D3.js, and jQuery,</b> which greatly improved my skillset as a frontend developer, followed up on my interest in civic tech, and picked up concepts of the <b>Agile methodology, human-centered design, and product management.</b> I added major features (both web and mobile) to a web app and also created a data visualization of users' news reading habits, such as time spent and political leaning of articles read. These data were gathered through the CivikOwl Chrome extension, featured on <a href="https://www.producthunt.com/posts/civikowl">ProductHunt</a>.</p>
+    </div>
+  </div>
+  <div class="pos">
+    <div class="col-md-4">
+      <img class="pshift" src="img/pshiftLogo.png" href="http://paradigmshiftcs.org.s3-website-us-east-1.amazonaws.com/" target="_blank">
+    </div>
+    <div class="col-md-8">
+      <p>Last spring, I joined <a href="http://paradigmshiftcs.org.s3-website-us-east-1.amazonaws.com/" target = "_blank">Paradigm Shift</a>, a venture that's working to promote computer science education in underserved high schools across the US, as a <b>developer</b>. I worked on content for <a href="http://paradigmshiftcs.org/workshop/ecsa1/files/WorkshopHandout.pdf">workshops introducing computer science</a> and <a href="http://paradigmshiftcs.org.s3-website-us-east-1.amazonaws.com/projects/rps/index.html#materials">a Python project</a> that teaches basic concepts of artifical intelligence.</p>
+    </div>
+  </div>
+  <div class="pos">
+    <div class="col-md-4">
+      <img class="astro" src="img/ucsc.png" href="https://www.astro.ucsc.edu/" target="_blank">
+    </div>
+    <div class="col-md-8">
+      <p>I was an <b>astrophysics research intern</b> at <a href="https://www.ucsc.edu" target="_blank">UC Santa Cruz</a> in the summer of 2015. I learned how to program using <b>Python</b> and scientific computing libraries such as <b>Numpy, Scipy, and Matplotlib</b>, and developed a novel algorithm that analyzes data from the spectra of distant galaxies to draw conclusions about their temperature. Our abstract was published on the <a href="http://adsabs.harvard.edu/abs/2016AAS...22724314N" target="_blank">Harvard-NASA database</a> and we were named <a href="http://ucsc-sip.org/news-archive/2015-siemens-competition-semifinalists/" target="_blank">national semifinalists in the Siemens Competition for Math, Science, and Technology</a>.</p> 
+    </div>
+  </div>
+  </div>
+  
+  <div class="projects" id="projects">
+    <h2>What I've Built</h2>
+    <div class="projects">
+    <h3>Data Analysis and Visualization</h3>
+    <div class="col-md-3">
+      <a data-target="#carbon" data-toggle="modal">
+        <img src="img/carbon.png">
+        <p class="title">Carbon Tweetprints</p>
+      </a>
+  <div class="modal fade" id="carbon" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Carbon Tweetprints</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>Event: </b>Berkeley Energy and Resources Collaborative (BERC) Hackathon 2017</p>
+            <p><b>Team: </b>Pancham Yadav(Berkeley CogSci), Janaki Vivrekar(Berkeley CS+Math), Yajushi Mattegunta(Berkeley EECS), Pranav Bhasin(Berkeley EECS)</p>
+            <p><b>What we did: </b>We investigated the relationship between the locations of tweets about climate change and of the sources of carbon emissions in the US, using data from the Twitter API and the Energy Information Administration, clustered the data points with K-nearest neighbors, and superimposed them on a map of the United States.</p>
+            <p><b>Role: </b>On the backend, I worked on cleaning the data and used these data to create endpoints for a web server. On the frontend, I created the user interface such that it effectively displayed data from the backend on a map of the US.</p>
+            <p><b>Tools Used: </b>Python, Pandas, Tweepy, Flask, Numpy, Scikit-learn, HTML/CSS/JavaScript, JQuery, Google Maps API</p>
+            <p><b>What I learned: </b>I witnessed firsthand the importance of designing a data visualization around the audiences' needs, and also learned how to effectively display data using maps. I also learned more about Pandas and the Twitter API.</p>
+            <p><b>Links:</b> <a href="https://github.com/panchamyadav/BERCHackathon/tree/master" target="_blank">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <a data-target="#report" data-toggle="modal">
+      <img src="img/report.png">
+      <p class="title">CivikOwl Report</p>
+      </a>
+      <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">CivikOwl Report</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+              <p><b>Team: </b>Ajoy Sojan (CTO), Michelle Lee(UI/UX, Product), Arjun Moorthy(CEO)</p>
+              <p><b>What we did: </b>We built a Chrome extension that would track the bias of news sources users read and assigned them a score (high, medium, low). Through the extension, they could view a report of these scores, which tracks their behavior over multiple days, and displays the bias of sources they read on a particular day.</p>
+              <p><b>Role: </b>I worked on the frontend for the report, delivering a webpage which followed design specifications and accessed and visualized data from the backend.</p>
+              <p><b>Tools Used: </b>HTML/CSS/JavaScript, D3.js, Bootstrap, JQuery</p>
+              <p><b>What I learned: </b>This was my first time creating a product from scratch in a professional setting, so I was able to fully explore how the connects the designs and the backend through communicating with my mentors. I had to make major design decisions for myself, such as how to effectively format data from the backend and what libraries to use for data visualization. I also taught myself D3.js and JQuery in under a week in order to meet all the specifications.</p>
+              <p><b>Links:</b> <a href="https://chrome.google.com/webstore/detail/civikowl/clbbiejjicefdjlblgnojolgbideklkp" target="_blank">Chrome Web Store</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+      <a data-target="#color" data-toggle="modal">
+        <img src="img/cogs.png">
+        <p class="title">Gender and Color Perception</p>
+      </a>
+      <div class="modal fade" id="color" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Gender and Color Perception</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+              <p><b>Course: </b>CogSci 88 (Data Science and the Mind)</p>
+              <p><b>Team: </b>Vincent Ngo (Berkeley CogSci)</p>
+              <p><b>What we did: </b>We analyzed data from the <a href="http://www1.icsi.berkeley.edu/wcs/" target="_blank">World Color Survey</a> – which examined color perception in over 2500 speakers of 110 languages. The dataset contained the speakers' demographic information, so we decided to examine the differences between the responses of male and female speakers. We constructed a prototype model and aggregated each gender's distance from the model, then conducted an A/B test on the responses to test for statistical significance, concluding that there is no significant difference between the genders.</p>
+              <p><b>Role: </b>I worked on visualizing the data with histograms and scatter plots and implemented algorithms to create the model and for the A/B tests.</p>
+              <p><b>Tools Used: </b>Python, Numpy, Scipy, Matplotlib</p>
+              <p><b>What I learned: </b>Working with large corpuses of text and extracting the important information, creating basic statistical models over these data.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+      <a data-target="#spectra" data-toggle="modal">
+        <img src="img/astro.png">
+        <p class="title">Galactic Spectral Analysis</p>
+      </a>
+      <div class="modal fade" id="spectra" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Galactic Spectral Analysis</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+              <div class="modal-body">
+                <p><b>Team: </b>Jerry Hong(Palo Alto High School), mentored by Dr. C. Martin Gaskell(UC Santa Cruz Department of Astronomy and Astrophysics)</p>
+                <p><b>What we did: </b>We analyzed spectra from accretion disks, bodies that surround active galactic nuclei, so that we could reconcile observed data with theoretical calculations. We found that the temperature decreases at a slower rate with resprect to the radius than predicted and that the disks are larger than their predicted sizes. </p>
+                <p><b>Role: </b>I primarily worked on generating a spectral model based on accretion disk theory and modifying the radial temperature distribution to fit with observed data. </p>
+                <p><b>Tools Used: </b>Python, Numpy, Scipy, Matplotlib</p>
+                <p><b>What I learned: </b>This was the first time I had ever programmed, so I learned how to use Python and its scientific computing libraries to model physical phenomena I had only read about in papers.</p>
+                <p><b>Links: </b> <a href="https://drive.google.com/file/d/1BG96sfCVKiJPFyfERvP5tBG81xQyvEGC/view?usp=sharing" target="_blank">Poster presented at the American Astronomical Society's 2016 meeting.</a> <a href="http://adsabs.harvard.edu/abs/2016AAS...22724314N" target="_blank">Abstract</a></p>
+                <p><b>Awards: </b> National Semifinalist, Siemens Competition in Math, Science, and Technology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="proj">
+    <h3>Web Development</h3>
+    <div class="col-md-3">
+      <a data-target="#flu" data-toggle="modal">
+        <img src="img/virulence.png">
+        <p class="title">Project Virulence</p>
+      </a>
+    <div class="modal fade" id="flu" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Project Virulence</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>Event: </b>CalHacks 4.0</p>
+            <p><b>Team: </b>Jay Wang(Berkeley Bio + CS)</p>
+            <p><b>What we did: </b>We built a web app that predicts the lethality of the flu virus when different strains exchange genetic information. We accessed and manipulated genetic and protein data on 18,000 strains of the flu virus, and then used results from a recent research paper to determine if these strains were deadly, displaying our model's outcome in a web app.</p>
+            <p><b>Role: </b> I worked on cleaning up the data, scraping the National Institute of Health's website, and packaging our models into a responsive web application.</p>
+            <p><b>Tools Used: </b> Python, Pandas, Scrapy, BeautifulSounp, Numpy, Scikit-learn, Flask, HTML/CSS, Bootstrap</p>
+            <p><b>What I learned: </b>This was my first time working with Pandas, so I learned how to use it to manipulate data from a CSV. It was also my first time creating a web app with a major backend, so I learned about best practices for modularizing code. Aside from this, it was fun walking my partner through the process of designing and developing a web application and furthering the latest biological research with computation.</p>
+            <p><b>Links:</b> <a href="http://github.com/sathvikn/calhacks-17" target="_blank">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+      <a data-target="#dsisite" data-toggle="modal">
+        <img src="img/dsisite.png">
+        <p class="title">Data Science for India Website</p>
+      </a>
+      <div class="modal fade" id="dsisite" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Data Science for India Website</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>Team: </b>Sidhant Bhavnani(The Mother's International School), Vinit Jain(Jain University ECE), Anish Saha(Berkeley Math+CS)</p>
+            <p><b>What we did: </b>We modified Data Science for India's website from a blank page with our mission statement to a showcase of our team's growth and progress over the summer of 2017. We redesigned it to show the work we did across the nation, the diverse backgrounds of our team, and our curriculum.</p>
+            <p><b>Role: </b> I led the team following the Agile methodology, wireframed the site, and created pages with our curriculum and details about our team members.</p>
+            <p><b>Tools Used: </b> HTML/CSS/JavaScript, JQuery, Bootstrap, SASS</p>
+            <p><b>What I learned: </b>I learned to capitalize on certain team members' strengths and take their suggestions, such as using CSS preprocessors, into consideration when completing the project. In terms of technical ability, I learned about the power of programmatically displaying informtion on a static website, using JavaScript to generate information about members of our team.</p>
+            <p><b>Links:</b> <a href="http://datascienceforindia.com" target="_blank">Site</a> <a href="https://github.com/dsindia/dsindia.github.io" target="_blank">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+      <a data-target="#coforum" data-toggle="modal">
+        <img src="img/coforum.png">
+        <p class="title">CivikOwl Forum</p>
+      </a>
+      <div class="modal fade" id="coforum" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">CivikOwl Forum</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>Team: </b>Ajoy Sojan (CTO), Michelle Lee(UI/UX, Product), Arjun Moorthy(CEO), Pradeep Keshary (Frontend Developer) </p>
+            <p><b>What we did: </b>We created a web and mobile platform for users to anonymously discuss news articles, gain thoughtful insights about current issues, and and contact their government officials if they were passionate about a topic.</p>
+            <p><b>Role: </b> I worked on developing features and fixing bugs on the frontend, shipping code to production, going from working on small visual bugs to creating entirely new components. Some features I worked on involved sending and receiving data from the backend and developing mobile versions of features present on our desktop client.</p>
+            <p><b>Tools Used: </b>ReactJS, SASS, Webpack, Babel, AWS</p>
+            <p><b>What I learned: </b>This was my first time doing frontend development in a professional setting, so I experienced the process of agile software development and code review, and working with a large code base. I also learned about the React JavaScript framework and effectively deploying code via AWS.</p>
+            <p><b>Links:</b> <a href="https://angel.co/projects/587552-civikowl-forum" target="_blank">AngelList</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+      <a data-target="#legislate" data-toggle="modal">
+        <img src="img/legislate.png">
+        <p class="title">Legislate</p>
+      </a>
+    </div>
+    <div class="modal fade" id="legislate" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">CivikOwl Forum</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>What I did: </b>A web app that helps users voice talk to their representatives about the issues they care about. I had read about the effectiveness of calling your representatives and the importance of state legislators when making policies. As a result, I decided to consolidate features like showing users contact info and online profiles for both their members of Congress and their state legislatures in addition to looking up and filtering current legislation, into one website.</p>
+            <p><b>Tools Used: </b>Python, Flask, Open States API, Sunlight Congress API (Currently deprecated), HTML/CSS, Bootstrap, Flask, Jinja2, Heroku</p>
+            <p><b>What I learned: </b>I learned how to use RESTFful APIs and Python for server-side development, and connected this with my knowledge of web development. I also learned about the process of deploying apps on cloud services such as Heroku and AWS.</p>
+            <p><b>Links:</b> <a href="https://github.com/sathvikn/yourgovyourvoice" target="_blank">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  </div>
+  <div class="proj">
+    <h3>Miscellaneous Projects</h3>
+    <div class="col-md-3">
+      <a data-target="#reach" data-toggle="modal">
+        <img src="img/reach.png">
+        <p class="title">Reach</p>
+      </a>
+      <div class="modal fade" id="reach" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Reach</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>Event: </b>Berkeley Builds 2017</p>
+            <p><b>Team: </b>Aaryaman Sen(Berkeley CogSci), Tejal Gala(Berkeley BioE), Aditya Palacharla(Berkeley BioE)</p>
+            <p><b>What we did: </b>We designed a mobile app that would improve users' experiences when searching for community resources. We partnered with the nonprofit Health Leads, which seeks to improve the quality of their clients' medical care by helping them seek out resources such as food pantries to ensure they maintain a healthy diet. To offer a clean user experience, we decided to host their online services on a mobile platform, which would use speech recognition and natural language processing, as well as take the users' history into account when accessing Health Leads's services.</p>
+            <p><b>Role: </b> I helped wireframe parts of the app and conduct research.</p>
+            <p><b>Tools Used: </b> Sketch, Figma</p>
+            <p><b>What I learned: </b>This was my first UI/UX design project, so I learned about human-centered design processes and best practices for designing a clean, intuitive user interface. </p>
+            <p><b>Links:</b> <a href="https://medium.com/@aaryaman/designing-an-accessible-gateway-to-community-resources-for-holistic-medical-care-146ee6008976" target="_blank">Blog Post</a></p>
+            <p><b>Awards:</b> Berkeley Builds Winner</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3" style="margin-right: 25px;">
+      <a data-target="#FoodAnalyzer" data-toggle="modal">
+        <img src="img/FoodAnalyzer2.png">
+        <p class="title">FoodAnalyzer</p>
+      </a>
+      <div class="modal fade" id="FoodAnalyzer" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">FoodAnalyzer</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>Event: </b>Hack UC Santa Cruz 2017</p>
+            <p><b>Team: </b>Yajushi Mattegunta(Berkeley EECS), Ivon Liu(Berkeley EECS), Sukrit Arora(Berkeley EECS), Lawrence Cheng(Berkeley EECS)</p>
+            <p><b>What we did: </b> We created a Chrome extension to generate the calorie content for each ingredient in a recipe. To do this, we wrote a web scraper to access the ingredients on a recipe's website and implemented a function to recognize which part of the string is a food and which part corresponds to the amount of the food using the Google Cloud Natural Language Processing API. We then scraped the USDA Food Composition Database with the list of foods as queries, and matched the query to the entry that was the most similar. After that, we called the USDA's Food Composition Databases API to return the calories in each ingredient and converted these values to correspond to the amounts specified in the recipe.</p>
+            <p><b>Role: </b>I worked on building the scrapers, calling the USDA's API, and styling the extension.</p>
+            <p><b>Tools Used: </b> Python, JavaScript, CSS, Scrapy, BeautifulSoup, Google Cloud NLP API</p>
+            <p><b>What I learned: </b>I found that when there isn't a readily available API, web scraping is always an option. I also learned the importance of partitioning tasks when working on teams to create a finished product.</p>
+            <p><b>Links:</b> <a href="https://devpost.com/software/food-analyzer" target="_blank">DevPost</a><a href='https://github.com/yaju-m/Food-Analyzer' target="_blank">GitHub</p>
+            <p><b>Awards:</b> 3rd place in Tech Cares at Hack UC Santa Cruz</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+      <a data-target="#BearMaps" data-toggle="modal">
+        <img src="img/bearmaps.png">
+        <p class="title" style="margin-left: 25px;">BearMaps</p>
+      </a>
+      <div class="modal fade" id="BearMaps" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">BearMaps</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>Course: </b>CS 61B(Algorithms and Data Structures) Final Project</p>
+            <p><b>What I did: </b>I wrote the backend of a web server to display a map of the area around Berkeley. This app supported operations such as scrolling, zooming, and route finding. I constructed a quadtree of image files to be rendered based on a query, and implemented the A* algorithm to find the shortest path between points on the map.</p>
+            <p><b>Tools Used: </b> Java, Maven, XML, OpenStreetMap data</p>
+            <p><b>What I learned: </b>I made key decisions about which data structures to use based on technical specifications and learned about connecting real-world data with structures like graphs.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 </div>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-  </body>
+</body>
+<footer>
+  <div class="jumbotron" style="margin-top: 3vh;">
+  <p>Like my work? Let's connect! My email is<a href="mailto:sathviknair@berkeley.edu"> sathviknair@berkeley.edu.</a></p>
+</div>
+<span>Designed and developed by Sathvik Nair</span>
+</footer>
 </html>

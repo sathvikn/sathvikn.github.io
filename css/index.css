@@ -1,0 +1,72 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+}
+
+.icons a {
+	font-size: 36px;
+	margin-right: 2.5vw;
+}
+.grid {
+	display: inline-block;
+}
+
+.research {
+	width: 100px;
+	height: 125px;
+}
+
+.d8 {
+	width: 150px;
+	height: 150px;
+}
+
+.dsi {
+	width: 175px;
+	height: 125px;
+}
+
+.pshift {
+	width: 200px;
+	height: 75px;
+	position: relative;
+	top: 50%;
+}
+
+.astro {
+	width: 150px;
+	height: 150px;
+}
+.projects img {
+	width: 250px;
+	height: 150px;
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.projects .col-md-3 .title {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.pos {
+	display: inline-block;
+}
+.proj {
+	display: inline-block;
+}
+.projects .col-md-3:hover img {
+  opacity: 0.3;
+  color: black;
+  cursor: pointer;
+}
+
+.projects .col-md-3:hover .title {
+  opacity: 1;
+}

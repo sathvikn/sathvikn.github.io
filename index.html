@@ -18,32 +18,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/bbba5386a6.js"></script>
+    <script>
+    	$("#nav ul li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 1000, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+
+    </script>
   </head>
+  <body data-spy="scroll" data-target=".collapse navbar-collapse" data-offset="50">
 
   <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-      <div class="navbar-header" style='position: fixed;'>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class = "nav navbar-nav navbar-left">
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = '#work'>Work</a></li>
-      <li><a href= '#research'>Research</a></li>
-      <li><a href= '#teaching'>Teaching</a></li>
-      <li><a href='#coursework'>Coursework</a></li>
-      <li><a href='#projects'>Projects</a></li>
-      </ul>
-    </div>
-  </div>
-    </div>
-  </nav>
 <div class="container">
 <div class="intro">
 <div class='row'>
@@ -69,7 +69,7 @@
     <p>This semester, I'm on the teaching staff for two data science courses, tutoring <a href='https://data8.org' target='_blank'>Foundations of Data Science</a>, and assisting lab sections in <a href='https://prob140.org' target='_blank'>Probability for Data Science</a>, and also helping direct and advise an <a href='http://datascienceforindia.com' target='_blank'>educational outreach program</a> I founded last summer to promote data science education in India. I'll be taking Computer Architecture (CS 61C), Concepts of Statistics (STAT 135), Introduction to Linguistic Science (LING 100), and Contemporary Theories of Political Economy (POLECON 101). I'm also looking for internships in data science and related fields for summer 2019!</p>
   </div>
   <div class="work">
- <h2 id ='work'>Work Experience</h2>
+ <h2 id ='work' class='header'>Work Experience</h2>
 <div class='pos'>
 	<div class='col-md-4'>
 		<img src='img/amat.jpeg' class='amat'>
@@ -87,7 +87,7 @@
     </div>
   </div>
 
-  <h2 id='#research'>Research</h2>
+  <h2 id='research' class='header'>Research</h2>
   	<div class='pos'>
   		<div class='col-md-4'>
   			<a href="http://cocosci.berkeley.edu" target="_blank"><img class='research' src = 'img/Bayes-300h.jpg'></a>
@@ -104,7 +104,7 @@
       <p>I was an <b>astrophysics research intern</b> at <a href="https://www.ucsc.edu" target="_blank">UC Santa Cruz</a> in the summer of 2015. I learned how to program using <b>Python</b> and scientific computing libraries such as <b>Numpy, Scipy, and Matplotlib</b>, and developed a novel algorithm that analyzes data from the spectra of distant galaxies to draw conclusions about their temperature. Our abstract was published on the <a href="http://adsabs.harvard.edu/abs/2016AAS...22724314N" target="_blank">Harvard-NASA database</a> and we were named <a href="http://ucsc-sip.org/news-archive/2015-siemens-competition-semifinalists/" target="_blank">national semifinalists in the Siemens Competition for Math, Science, and Technology</a>.</p> 
     </div>
   	</div>
-  <h2 id='#teaching'>Teaching</h2>
+  <h2 id='teaching' class='header'>Teaching</h2>
   <div class='pos'>
   	  	<div class='col-md-4'>
   		<a href='http://data8.org' target='_blank'><img class="d8" src='img/d8logo.png'></a>
@@ -132,7 +132,7 @@
     </div>
   </div>
   </div>
-    <div class="courses" id='#coursework'>
+    <div class="header" id='coursework'>
   <h2>Coursework</h2>
   <ul>
   	<li>Efficient Algorithms and Intractable Problems (CS 170, Spring 2018)</li>

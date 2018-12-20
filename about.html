@@ -1,0 +1,148 @@
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Sathvik Nair</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <div ui-view="header" autoscroll="true"></div>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--Style Sheets-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bbba5386a6.js"></script>
+    <script>
+      $("#nav ul li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 1000, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+
+    </script>
+  </head>
+  <body data-spy="scroll" data-target=".collapse navbar-collapse" data-offset="50">
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="about.html">Experience</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+<div class = 'container'>
+<div class="experience" id="exp">
+  <div class="work">
+ <h2 id ='work' class='header'>Work Experience</h2>
+<div class='pos'>
+	<div class='col-md-4'>
+		<img src='img/amat.jpeg' class='amat'>
+	</div>
+	<div class='col-md-8'>
+		<p>This summer, I interned as a Data Scientist at AppliedX, part of Applied Materials's edtech division. I created descriptive visualizations for various business units in the company using <b>Tableau</b>, preprocessing data from <b>Microsoft SQL Server</b> using <b>Pandas,</b> and analyzed major causes of roles changing using logistic regression and Bayesian inference. I also developed a <b>recommendation algorithm</b> to connect employees with one another based on content-based filtering and document similarity using <b>NLTK, Scikit-Learn, Pandas, Scipy, and Numpy,</b> applied over a based of 13,000 employees. I productionized the algorithm by designing and developing a web app, and iterated on feedback from users from both within and outside the group.</p>
+	</div>
+</div>
+  <div class="pos">
+    <div class="col-md-4">
+      <img class="co" src="img/civikowl.png" href="http://civikowl.com" target="_blank">
+    </div>
+    <div class="col-md-8">
+      <p>I interned at <a href="http://civikowl.com" target="_blank">CivikOwl</a> last summer 2017 working on <b>software development</b>. I learned technologies like <b>ReactJS, D3.js, and jQuery,</b> which greatly improved my skillset as a frontend developer, followed up on my interest in civic tech, and picked up concepts of the <b>Agile methodology, human-centered design, and product management.</b> I added major features (both web and mobile) to a web app and also created a data visualization of users' news reading habits, such as time spent and political leaning of articles read. These data were gathered through the CivikOwl Chrome extension, featured on <a href="https://www.producthunt.com/posts/civikowl">ProductHunt</a>.</p>
+    </div>
+  </div>
+
+  <h2 id='research' class='header'>Research</h2>
+  	<div class='pos'>
+  		<div class='col-md-4'>
+  			<a href="http://cocosci.berkeley.edu" target="_blank"><img class='research' src = 'img/Bayes-300h.jpg'></a>
+  		</div>
+  		<div class='col-md-8'>
+  			<p>During my sophomore year, I was a research assistant at UC Berkeley's <a href="http://cocosci.berkeley.edu/" target="_blank">Computational Cognitive Science Lab</a> working under <a href="https://www.stephanmeylan.com">Dr. Stephan Meylan,</a> designing and developing an audiovisual web-based experiment that models a game of "Telephone," through which we examined how understanding of language changes as the same phrase is transmitted across multiple subjects. Because we needed to record and play audio from users, I used the <b>Web Audio API in JavaScript</b> for this functionality, and <b>JQuery with Bootstrap UI components</b> to take participants through the experiment. I mostly worked on the frontend, but added several backend functions in <b>Flask,</b> writing data to a <b>Firebase</b> database. I also worked on pipelines to analyze the data using probabilistic context-free grammar models, which involved writing a Python module to interface with parsers written in lower-level languages. I also developed a logistic regression model to predict whether a sentence would change in the game, based on their probabilities under various models, using <b>Numpy, Pandas, and Scikit-Learn.</b></p>
+  		</div>
+  	</div>
+    <div class="pos">
+    <div class="col-md-4">
+      <img class="astro" src="img/ucsc.png" href="https://www.astro.ucsc.edu/" target="_blank">
+    </div>
+    <div class="col-md-8">
+      <p>I was an <b>astrophysics research intern</b> at <a href="https://www.ucsc.edu" target="_blank">UC Santa Cruz</a> in the summer of 2015 under <a href="https://www.astro.ucsc.edu/faculty/index.php?uid=mgaskell">Dr. C. Martin Gaskell,</a> working with <a href="https://www.linkedin.com/in/jerry-hong-07aa6213a/">Jerry Hong.</a> I learned how to program using <b>Python</b> and scientific computing libraries such as <b>Numpy, Scipy, and Matplotlib</b>, and developed a novel algorithm that analyzes data from the spectra of distant galaxies to draw conclusions about their temperature. Our abstract was published on the <a href="http://adsabs.harvard.edu/abs/2016AAS...22724314N" target="_blank">Harvard-NASA database</a> and we were named <a href="http://ucsc-sip.org/news-archive/2015-siemens-competition-semifinalists/" target="_blank">national semifinalists in the Siemens Competition for Math, Science, and Technology</a>.</p> 
+    </div>
+  	</div>
+  <h2 id='teaching' class='header'>Teaching</h2>
+  <div class='pos'>
+  	  	<div class='col-md-4'>
+  		<a href='http://data8.org' target='_blank'><img class="d8" src='img/d8logo.png'></a>
+  	</div>
+  	<div class='col-md-8'>
+        <p>During both spring and summer terms of 2018, I was a tutor for the fastest-growing course at UC Berkeley, <a href="http://data8.org" target="_blank">Foundations of Data Science</a>, helping teach statistical inference techniques using Python. I held office hours, taught a small section, developed content with <b>Jupyter notebooks</b> and <b>LaTEX</b>, and graded assignments. I also got the opportunity to speak at UC Berkeley's undergraduate data science pedagogy workshop this summer as a student panelist, where I described my experience on Data 8 course staff to around 50 professors from universities across the United States.</p>
+  	</div>
+  </div>
+
+  </div>
+  <div class="pos">
+  	<div class='col-md-4'>
+  		<a href='http://datascienceforindia.com' target='_blank'><img class="dsi" src='img/navLogo.png'></a>
+  	</div>
+  	<div class='col-md-8'>
+  		<p>I founded <a href='http://datascienceforindia.com' target='_blank'> Data Science for India</a> with fellow Berkeley students last May. I've largely been focusing on directing and participating in curriculum development, as well as interfacing with instructors on the ground. I devised and implemented a workflow for content development involving <b>Jupyter</b> and <b>Git</b> for coding content and Google Drive for worksheets. Our work over the summer teaching fundamental concepts of data science to 500 students in over 12 Indian high schools was recognized by the <a href="https://southasia.berkeley.edu/sites/default/files/shared/newsletter/Khabar-Fall_2017.pdf" target="_blank">Institute of South Asia Studies</a> at UC Berkeley. This summer, we piloted a curriculum tailored to students on "Data Literacy," and are working on bootcamp workshops targeted to teaching Python with an emphasis on data science for high school students.</p>
+  	</div>
+  </div>
+  <div class="pos">
+    <div class="col-md-4">
+      <img class="pshift" src="img/pshiftLogo.png" href="http://paradigmshiftcs.org.s3-website-us-east-1.amazonaws.com/" target="_blank">
+    </div>
+    <div class="col-md-8">
+      <p>In the spring of my freshman year, I joined <a href="http://paradigmshiftcs.org.s3-website-us-east-1.amazonaws.com/" target = "_blank">Paradigm Shift</a>, a venture that's working to promote computer science education in underserved high schools across the US, as a <b>developer</b>. I worked on content for <a href="http://paradigmshiftcs.org/workshop/ecsa1/files/WorkshopHandout.pdf">workshops introducing computer science</a> and <a href="http://paradigmshiftcs.org.s3-website-us-east-1.amazonaws.com/projects/rps/index.html#materials">a Python project</a> that teaches basic concepts of artifical intelligence.</p>
+    </div>
+  </div>
+  </div>
+    <div class="header" id='coursework'>
+  <h2>Coursework</h2>
+  <ul>
+    <h3>Computer Science Core</h3>
+        <li>Efficient Algorithms and Intractable Problems</li>
+        <li>Computer Architecture</li>
+        <li>Data Structures</li>
+        <li>Designing Information Devices & Systems</li>
+        <li>Structure and Interpretation of Computer Programs</li>
+    <h3>Language, Psychology, & Cognition</h3>
+        <li>Introduction to Linguistic Science</li>
+        <li>Foundational Concepts of Neuroscience</li>
+        <li>Social Psychology</li>
+        <li>Stigma and Prejudice</li>
+    <h3>Data Science & Analytics</h3>
+    <li>Natural Language Processing</li>
+  	<li>Probability for Data Science</li>
+    <li>Discrete Matematics</li>
+    <li>Linear Algebra</li>
+    <li>Data Science and the Mind</li>
+    <li>Foundations of Data Science</li>
+  </ul>
+  </div>
+</div>
+  </html>

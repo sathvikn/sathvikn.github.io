@@ -59,7 +59,32 @@
     <h2>Projects</h2>
     <div class='row' style='width: 150%;'>
     <div class="col-md-3">
-      <a data-target="#carbon" data-toggle="modal">
+        <a data-target="#embeddings" data-toggle="modal">
+        <img src="img/embedding_viz.png">
+        <p class="title">Bias and Word Embeddings</p>
+      </a>
+  <div class="modal fade" id="embeddings" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Bias and Word Embeddings</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <p><b>What I did: </b>I investigated how distributed numerical representations of words as vectors, or word embeddings, can yield problematic inferences, and how they can amplify human biases such as gender and religion, when used as inputs to neural NLP models. I read Stanford's GloVe dataset and wrote several Numpy functions using linear algebra tools and cosine similarity to evaluate analogies like "man is to woman as king is to queen." To help with analysis, I used the WordNet database to query senses of the word "person," and used these results to help spot trends and bias in the data more easily. I also visualized embeddings and their transformations with principal component analysis, and wrote about it in a Medium article which was featured by Towards Data Science!</p>
+            <p><b>Tools Used: </b>Python, Numpy, Scikit-learn, Matplotlib</p>
+            <p><b>What I learned: </b>I covered concepts like analogy evaluation in my natural language processing class, but it was helpful to interact with the data and explore what could lead to the creation of complex analogies. I also learned about applications of PCA and word senses when I was conducting my analysis.</p>
+            <p><b>Links:</b> <a href="https://github.com/sathvikn/word_embedding_bias" target="_blank">GitHub</a> | <a href = 'https://towardsdatascience.com/how-biases-in-language-get-perpetuated-by-technology-b4edc5532f3f'>Blog Post</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+            <a data-target="#carbon" data-toggle="modal">
         <img src="img/carbon.png">
         <p class="title">Carbon Tweetprints</p>
       </a>
@@ -84,32 +109,7 @@
         </div>
       </div>
       </div>
-    </div>
-    <div class="col-md-3">
-      <a data-target="#color" data-toggle="modal">
-        <img src="img/cogs.png">
-        <p class="title">Gender and Color Perception</p>
-      </a>
-      <div class="modal fade" id="color" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="exampleModalLabel">Gender and Color Perception</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-            <div class="modal-body">
-              <p><b>Course: </b>CogSci 88 (Data Science and the Mind)</p>
-              <p><b>Team: </b>Vincent Ngo (Berkeley CogSci)</p>
-              <p><b>What we did: </b>We analyzed data from the <a href="http://www1.icsi.berkeley.edu/wcs/" target="_blank">World Color Survey</a> – which examined color perception in over 2500 speakers of 110 languages. The dataset contained the speakers' demographic information, so we decided to examine the differences between the responses of male and female speakers. We constructed a prototype model and aggregated each gender's distance from the model, then conducted an A/B test on the responses to test for statistical significance, concluding that there is no significant difference between the genders.</p>
-              <p><b>Role: </b>I worked on visualizing the data with histograms and scatter plots and implemented algorithms to create the model and for the A/B tests.</p>
-              <p><b>Tools Used: </b>Python, Numpy, Scipy, Matplotlib</p>
-              <p><b>What I learned: </b>Working with large corpuses of text and extracting the important information, creating basic statistical models over these data.</p>
-            </div>
-          </div>
-        </div>
-        </div>
+
     </div>
         <div class="col-md-3">
       <a data-target="#flu" data-toggle="modal">
@@ -216,7 +216,7 @@
             <p><b>Role: </b>I worked on building the scrapers, calling the USDA's API, and styling the extension.</p>
             <p><b>Tools Used: </b> Python, JavaScript, CSS, Scrapy, BeautifulSoup, Google Cloud NLP API</p>
             <p><b>What I learned: </b>I found that when there isn't a readily available API, web scraping is always an option. I also learned the importance of partitioning tasks when working on teams to create a finished product.</p>
-            <p><b>Links:</b> <a href="https://devpost.com/software/food-analyzer" target="_blank">DevPost</a><a href='https://github.com/yaju-m/Food-Analyzer' target="_blank">GitHub</p>
+            <p><b>Links:</b> <a href="https://devpost.com/software/food-analyzer" target="_blank">DevPost</a> | <a href='https://github.com/yaju-m/Food-Analyzer' target="_blank">GitHub</p>
             <p><b>Awards:</b> 3rd place in Tech Cares at Hack UC Santa Cruz</p>
           </div>
         </div>
@@ -252,6 +252,33 @@
         </div>
       </div>
       </div>
+
+    </div>
+    <div class = 'col-md-3' style = 'margin-left: 10vw;'>
+            <a data-target="#color" data-toggle="modal">
+        <img src="img/cogs.png">
+        <p class="title">Gender and Color Perception</p>
+      </a>
+      <div class="modal fade" id="color" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Gender and Color Perception</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; bottom: 3vh";">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+              <p><b>Course: </b>CogSci 88 (Data Science and the Mind)</p>
+              <p><b>Team: </b>Vincent Ngo (Berkeley CogSci)</p>
+              <p><b>What we did: </b>We analyzed data from the <a href="http://www1.icsi.berkeley.edu/wcs/" target="_blank">World Color Survey</a> – which examined color perception in over 2500 speakers of 110 languages. The dataset contained the speakers' demographic information, so we decided to examine the differences between the responses of male and female speakers. We constructed a prototype model and aggregated each gender's distance from the model, then conducted an A/B test on the responses to test for statistical significance, concluding that there is no significant difference between the genders.</p>
+              <p><b>Role: </b>I worked on visualizing the data with histograms and scatter plots and implemented algorithms to create the model and for the A/B tests.</p>
+              <p><b>Tools Used: </b>Python, Numpy, Scipy, Matplotlib</p>
+              <p><b>What I learned: </b>Working with large corpuses of text and extracting the important information, creating basic statistical models over these data.</p>
+            </div>
+          </div>
+        </div>
+        </div>
 
     </div>
 

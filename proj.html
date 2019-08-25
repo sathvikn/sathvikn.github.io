@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Sathvik Nair</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <div ui-view="header" autoscroll="true"></div>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--Style Sheets-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bbba5386a6.js"></script>
+    <script>
+      $("#nav ul li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 1000, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+
+    </script>
+  </head>
+  <body data-spy="scroll" data-target=".collapse navbar-collapse" data-offset="50">
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="about.html">Experience</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="proj.html">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+<div class = 'container'>
+  <h1 style = 'margin-bottom: 5vh'>Projects</h1>
+  <div class = "row">
+  <div class ='col-md-4'>
+    <div class="panel panel-default">
+      <div class = 'panel-heading'>NLP Workshop</div>
+      <div class="panel-body">
+        <i>Python, Pandas, SKLearn, NLTK, Jupyter</i><br>
+        Given at 2019<a href="https://www.sospectra.com/" target="_blank"> Spectra Hackaton</a> as ML and NLP introduction, with demo of Naive Bayes classifier to classify tweets about anxiety and depression.<br>
+        <a href = "https://docs.google.com/presentation/d/1BQx3ZReDnjDdIJN4Kz1ygR5nz9YN453YfnQerO85pmo/edit#slide=id.g5dd4449d37_1_17" target="_blank">Slides</a> | 
+        <a href = "https://github.com/sathvikn/spectra-nlp-workshop">Code</a>
+      </div>
+  </div>
+</div>
+  <div class = 'col-md-4'>
+    <div class="panel panel-default">
+      <div class = 'panel-heading'>Frame Classifier</div>
+      <div class="panel-body">
+        <i>Python, Numpy, Pandas, SKLearn, Jupyter</i><br>
+        K-nearest neighbors classifier from built from scratch using cosine similarity of word vectors as a distance metric to match frames in the <a href="https://icsi.berkeley.edu" target="_blank">FrameNet</a> database to a given word.<br>
+        <a href = "https://drive.google.com/file/d/1HnHmoGsHa-mZsJ4-LW_uvEGlgmUjmfrU/view?usp=sharing" target='_blank'>Report</a>
+      </div>
+  </div>
+  </div>
+  <div class = 'col-md-4'>
+    <div class="panel panel-default">
+      <div class = 'panel-heading'>Bias and Word Embeddings<img src='img/trophy.png' style = 'margin-left: 1vw; width: 5vh; height: 5vh'></div>
+      <div class="panel-body">
+        <i>Python, Numpy, Matplotlib, NLTK, SKLearn, Jupyter</i><br>
+        Investigated racial, gender, and religious bias with analogy evaluation with word vectors in GloVe dataset with linear algebra tools, PCA, and WordNet corpus. Featured on Medium's Machine Learning page when published.<br>
+        <a href = "https://towardsdatascience.com/how-biases-in-language-get-perpetuated-by-technology-b4edc5532f3f" target='_blank'>Blog Post</a> | 
+        <a href = "https://github.com/sathvikn/word_embedding_bias" target="_blank">GitHub</a>
+      </div>
+  </div>
+  </div>
+  <div class='row'>
+    <div class = 'col-md-4'>
+    <div class="panel panel-default">
+      <div class = 'panel-heading'>FoodAnalyzer <img src='img/trophy.png' style = 'margin-left: 1vw; width: 5vh; height: 5vh'></div>
+      <div class="panel-body">
+        <i>Python, Web Scraping, JavaScript/JQuery, CSS</i><br>
+        Chrome extension which reveals the calorie content of ingredients in a recipe using Scrapy and BeautifulSoup web scrapers and Google Cloud Natural Language Processing API and data from USDA Food Composition Database. 3rd place in Tech Cares at Hack UCSC 2017.  <br>     
+         <a href = "https://devpost.com/software/food-analyzer" target='_blank'>Devpost</a>
+        <a href = "https://github.com/yaju-m/Food-Analyzer" target="_blank">GitHub</a>
+      </div>
+    </div>
+    </div>
+    <div class = 'col-md-4'>
+    <div class="panel panel-default">
+      <div class = 'panel-heading'>Legislate</div>
+      <div class="panel-body">
+        <i>Flask, Python, Bootstrap, Heroku</i><br>
+        Website to display contact information about a user's state and local lawmakers and active bills in Congress and their state. Data from Open States and Sunlight Congress APIs (both currently deprecated).<br>     
+        <a href = "https://github.com/sathvikn/yourgovyourvoice" target="_blank">GitHub</a>
+      </div>
+    </div>
+    </div>
+    <div class = 'col-md-4'>
+    <div class="panel panel-default">
+      <div class = 'panel-heading'>Reach <img src='img/trophy.png' style = 'margin-left: 1vw; width: 5vh; height: 5vh'></div>
+      <div class="panel-body">
+        <i>Sketch, Figma</i><br>
+        UI/UX Design for a mobile app to help users find community health resources. First Place at Berkeley Builds, designed for nonprofit client Health Leads.<br>     
+        <a href = "https://medium.com/@aaryaman/designing-an-accessible-gateway-to-community-resources-for-holistic-medical-care-146ee6008976" target="_blank">Blog Post</a>
+      </div>
+  </div>
+  </div>
+
+
+
+  </div>
+</div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</div>

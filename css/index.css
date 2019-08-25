@@ -8,6 +8,7 @@ h1, h2, h3, h4 {
 .icons a {
 	font-size: 36px;
 	margin-right: 2.5vw;
+	text-decoration : none;
 }
 .grid {
 	display: inline-block;
@@ -29,7 +30,7 @@ h1, h2, h3, h4 {
 }
 
 .fn {
-	width: 12vw;
+	width: 9vw;
 	height: 17vh;
 }
 
@@ -96,6 +97,7 @@ h1, h2, h3, h4 {
 .row {
 	margin-bottom: 40px;
 }
+
 
 document.querySelector('').scrollIntoView({ 
   behavior: 'smooth' 

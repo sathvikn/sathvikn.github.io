@@ -18,15 +18,14 @@
               <p style="text-align:center">
                 <name>Sathvik Nair</name>
               </p>
-              <p>I am a postgrad research assistant at UC Berkeley's <a href="https://lcdlab.berkeley.edu/">Language & Cognitive Development Lab</a>, 
-                where I work at the intersection of psycholinguistics and natural language processing.
+              <p>Hello! I'm a recent college graduate based in the Bay Area. Currently, I'm a Software Development Engineer at Amazon Web Services,
+                 working on Data Services for Elastic Block Store.
               </p>
               <p>
-                This spring, I graduated from UC Berkeley with bachelor's degrees in Computer Science and Cognitive Science, where I received the Glushko
-                Prize for Outstanding Undergraduate Research in Cognitive Sciences. I also interned as a software development engineer at 
-                Workday and The Factual, and a data scientist at Applied Materials, and taught both introductory and advanced courses in data science and cognitive science.
+                This spring, I graduated from UC Berkeley with bachelor's degrees in Cognitive Science (Highest Honors) and Computer Science, where I received the <a href="https://cogsci.berkeley.edu/major-program/honors-program/robert-j-glushko-prize-distinguished-undergraduate-research"
+                >Glushko Prize for Outstanding Undergraduate Research in Cognitive Sciences</a>. I also interned as a software development engineer at 
+                Workday and <a href = "https://www.thefactual.com/"></a>The Factual, and a data scientist at Applied Materials, and taught both introductory and advanced courses in data science and cognitive science.
               </p>
-              <p>In the fall, I will be working as a software engineer at Amazon Web Services.</p>
               <p style="text-align:center">
                 <a href="mailto:sathviknair@berkeley.edu">Email</a> &nbsp|&nbsp
                 <a href="https://sathvikn.github.io">GitHub</a> &nbsp|&nbsp
@@ -43,26 +42,76 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in how humans' understanding of language and meaning can be modeled with a computational perspective, drawing upon tools from fields like
-                natural language processing and machine learning. My research has focused on both behavioral experiments and corpus analyses, and I'm excited to 
-                further explore the field.   
+                I'm interested in how humans' understanding of language and meaning can be modeled from a computational perspective, drawing upon tools from fields like
+                natural language processing. This can improve both our understanding of language's role in human cognition and also how language technologies
+                can achieve more human-like capabilities. My research has used both behavioral experiments and corpus analyses, and I'm excited to 
+                further explore the field by learning more about topics like pragmatics, lexical semantics, and language acquisition.
               </p>
-              <p>
-                This spring, I had the privilege of completing an honors thesis under <a href = 'https://stephanmeylan.com/'>Dr. Stephan Meylan</a> (MIT) and Professors 
-                <a href="https://lcdlab.berkeley.edu/people/"> Mahesh Srinivasan</a> and <a href = 'http://colala.berkeley.edu/people/piantadosi/'>Steve Piantadosi</a>. 
-                I analyzed how a contextualized word embeddings from a neural network (BERT) model relations between different meanings (or senses) of the same word, 
-                and found that both distances in the vector space and pairwise confusion from a sense classifier are reasonably correlated with human judgements of sense relatedness.
-              </p>
-              <p>Prior to that, I contributed to three other research projects.
-                I compared the lexical complexity of child-directed and adult-directed speech with a
-                 <a href = "http://ruthefoushee.com/publications/posters/Foushee_Yang_Srinivasan_2019-BUCLD_cdscomplexity.pdf">corpus analysis</a> through my current lab, 
-                 explored <a href = "https://drive.google.com/file/d/1HnHmoGsHa-mZsJ4-LW_uvEGlgmUjmfrU/view">expanding FrameNet</a> with word embeddings through the
-                International Computer Science Institute (PI: Dr. Collin Baker), and worked on experimentally comparing models of word recognition with a web-based game of "Telephone" (journal article under
-                 review) with the <a href = "https://cocosci.princeton.edu/">Computational Cognitive Science Lab</a> (PI: <a href = 'https://cocosci.princeton.edu/tom/tom.php'>Prof. Tom Griffiths</a>).
-              </p>
-            </td>
-          </tr>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                <h3>Publications</h3>
+                  <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src='table_tsne.png' width="300">
+                      </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <papertitle>Contextualized Word Embeddings Capture Human-Like Relations Between English Word Senses</papertitle>
+                      <br>
+                      <strong>Sathvik Nair</strong>,
+                      <a href="https://lcdlab.berkeley.edu/people/">Mahesh Srinivasan</a>,
+                      <a href="https://stephanmeylan.com/">Stephan Meylan</a>
+                      <br>
+                      <em>Accepted at Cognitive Aspects of the Lexicon workshop(CogALex VI) at 28th International Conference on Computational Linguistics (COLING)</em>, 2020  
+                      <br>
+                      <em>Undergraduate Honors Thesis, advised by Dr. Meylan, Prof. Srinivasan, and Prof. <a href = 'http://colala.berkeley.edu/people/piantadosi/'>Steven Piantadosi</a></em>
+                      <br>
+                      <a href="cogsci_thesis.pdf">Thesis</a> |
+                      <a href="https://osf.io/fm78w/">Code and Data</a>
+                      <p></p>
+                      <p>We investigate whether recent advances in NLP (specifically the Transformer-based neural network model BERT), are able to capture human-like distinctions between 
+                        meanings of the same word, such as polysemy and homonymy. We collect human judgements of the relatedness of selected WordNet senses for 32 English words 
+                        from a two-dimensional spatial arrangement task, and compare them with relatedness according to BERT vectors for these corresponding senses in the SemCor corpus.
+                        We demonstrate participants’ judgments of the relatedness between senses are correlated with distances between senses in the BERT embedding space, and that BERT encodes
+                        homonymous sense relations closer to human judgements than polysemous ones.
+                  </p>
+                    </td>
+                  </tr> 
+                  <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src='telephone.png' width="300">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <papertitle>Evaluating Models of Robust Word Recognition with Serial Reproduction.</papertitle>
+                      <br>
+                      <a href="https://stephanmeylan.com/">Stephan Meylan</a>,
+                      <strong>Sathvik Nair</strong>,
+                      <a href="https://cocosci.princeton.edu/tom/tom.php/">Tom Griffiths</a>
+                      <br>
+                      <em>Under Review</em>  
+                      <br>
+                      <p>We compared how several probabilistic generative language models, such as n-grams, probabilistic context free grammars (PCFGs), and neural networks, 
+                         capture human linguistic expectations in a web-based serial reproduction task, in which in which participants try to repeat sentences said by other participants,
+                         similar to a game of "Telephone. We found that models that make use of preceding context, especially those with abstract representations of linguistic structure, best predict changes participants
+                         made when trying to reproduce utterances in the experiment. I contributed to designing and implementing parts of the experimental interface, 
+                         extracting probabilities under PCFGs, modeling which words in utterances were most likely to change under the models, and revising the final paper.
+                      </p>
+                    </td>
+                  </tr> 
         </tbody></table>
+        <h3>Other Projects</h3>
+          Last year, I helped with a <a href = "http://ruthefoushee.com/publications/posters/Foushee_Yang_Srinivasan_2019-BUCLD_cdscomplexity.pdf">corpus analysis</a> comparing the
+          child-directed and adult-directed speech under <a href = "http://ruthefoushee.com/">Ruthe Foushee</a> (<a href = "https:/lcdlab.berkeley.edu"> 
+            Language and Cognitive Development Lab</a>, PI: Mahesh Srinivasan). For this project, I extracted text from the target corpora (such as CHILDES and Santa Barbara),
+            and ran exploratory analyses and permutation tests on the surprisal of child-directed and adult-directed speech.<br>
+          I also participated in Berkeley's <a href = "https://lx.berkeley.edu/ugrad/lrap">Linguistic Research Apprentices Practicum (LRAP)</a>, working on annotating lexical data for  
+          <a href = "https://framenet.icsi.berkeley.edu/fndrupal/">FrameNet</a> and explored <a href = "https://drive.google.com/file/d/1HnHmoGsHa-mZsJ4-LW_uvEGlgmUjmfrU/view">expanding the database</a> 
+          with word embeddings. This work was done under <a href = "https://linguistics.berkeley.edu/~dmetri/">Dmetri Hayes</a> at the International Computer Science Institute (PI: Dr. Collin Baker). 
+        </p>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
@@ -82,16 +131,16 @@
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Other</heading>
+          <heading>Miscellaneous</heading>
           <p>
             <ul>
-              <li><a href ='https://towardsdatascience.com/how-biases-in-language-get-perpetuated-by-technology-b4edc5532f3f'>Towards Data Science article on Bias in NLP Models</a></li>
-              <li><a href='https://www.dailycal.org/2018/01/30/thehouse-startup-with-berkeley-alumni-will-help-foster-innovation/'>Daily Californian op-ed on startup-academia collaborations
-              </a></li>
-              <li><a href = "https://github.com/sathvikn/spectra-nlp-workshop">Workshop on NLP/ML</a>, given at <a href = "https://www.facebook.com/events/make-school/spectra-30-hackathon/2334056506615102/">Spectra 3.0,</a>
-              a hackathon for gender minorities in tech. Presented overview of the field and sentiment classification demo on tweets related to mental health.</li>
+              <li><a href="https://www.skynettoday.com/briefs/gpt3">GPT-3: An AI Breakthrough, but not Coming for Your Job
+              </a>– Article describing GPT-3, reactions from the press and experts, and research-backed opinions on the technology's limitations for Skynet Today (AI news publication). Coauthored with <a href = "https://db7894.github.io/">Daniel Bashir</a></li>
+              <li><a href ='https://towardsdatascience.com/how-biases-in-language-get-perpetuated-by-technology-b4edc5532f3f'>How Biases in Language get Perpetuated by Technology
+              </a>– Towards Data Science article on personal project investigating gender, racial, and religious bias through analogy evaluation with static word embeddings (GloVe)</li>
+              <li><a href = "https://github.com/sathvikn/spectra-nlp-workshop">Workshop on NLP/ML</a>– given at <a href = "https://www.facebook.com/events/make-school/spectra-30-hackathon/2334056506615102/">Spectra 3.0,</a>
+              a hackathon for underrepresented genders in tech. Presented overview of the field and sentiment classification demo on tweets related to mental health.</li>
             </ul>
-            Outside of work, I like to play violin and percussion instruments (and listen to all kinds of music), read about current events, and drink tea. 
           </p>
         </td>
       </tr>
